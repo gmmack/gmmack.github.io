@@ -5,11 +5,11 @@
 }
 body {
 	
-	background: #0BB7FF;
+	background: #ade4fa;
 	margin: auto;
 	padding: 0;
 	color: #000;
-	background-color: #0BB7FF;
+	background-color: #ade4fa;
 	background-image: url(images/navBarTest.jpg);
 	background-repeat: repeat-x;
 }
@@ -92,7 +92,7 @@ p {
 }
 
 .content {
-	background-color: #0BB7FF;
+	background-color: #ade4fa;
 	right: 300px;
 	text-align: center;
 	font-family: Fixedsys;
