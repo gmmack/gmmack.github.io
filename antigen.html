@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<link rel="shortcut icon" href="favicon.ico" />
+<script src="scripts/jquery-latest.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+	var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+	var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+	if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+	var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_findObj(n, d) { //v4.01
+	var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+	d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+	if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+	for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+	if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+	var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+	if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Gavin Mack - Antigen</title>
+<link href="gamestylesheet.css" rel="stylesheet" type="text/css" />
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="antigen/lib/craft.js"></script>
+<script type="text/javascript">
+	var CALIFORNIA;
+	var NORTH_WEST;
+	var SOUTH_WEST;
+	var NORTH_ROCKIES;
+	var NORTH_CENTRAL;
+	var CENTRAL;
+	var SOUTH_CENTRAL;
+	var NORTH_EAST;
+	var EAST;
+	var SOUTH_EAST;
+	var AREAS;
+	var CURRENT_AREA;
+	var NEW_GAME = true;
+	var JUST_WON = false;
+	var JUST_LOADED = false;
+	var SFX_VOL = 1.0;
+	var OST_VOL = 1.0;
+	var EASY_SOLVED = 0;
+	var MED_SOLVED = 0;
+	var HARD_SOLVED = 0;
+	var MATCHED = 0;
+	var GAME_FINISHED = 0;
+
+	var imgPath = "antigen/assets";
+	var audioPath = "antigen/assets/Sound_Effects";
+	var bmgScalar = 0.5;
+</script>
+<script type="text/javascript" src="antigen/src/game.js"></script>
+<script type="text/javascript" src="antigen/src/scenes.js"></script>
+<script type="text/javascript" src="antigen/src/utils.js"></script>
+
+</head>
+
+
+<body>
+<div class="container">
+	<div class="header"><!-- end .header --><a href="index.html"><img src="images/banner_front.jpg" alt="Gavin Mack, Game Designer, Software Engineer" width="961" height="230" /></a></div>
+	<div class="content">
+	<ul id="MenuBar1" class="MenuBarHorizontal">
+	<li><a class="MenuBarItemSubmenu" href="index.html">Games</a>
+	<ul>
+		<li><a href="squabblesquad.html" title="squabblesquad">Birds At ARms</a></li>
+		<li><a href="antigen.html" title="antigen">Antigen</a></li>
+		<li><a href="antigen.html" title="pemdamonium">Pemdamonium</a></li>
+	</ul>
+	</li>
+	<li><a href="about.html">About</a></li>
+	<li><a href="resume.html">Resume</a></li>
+	<li><a href="misc.html">Misc Projects</a></li>
+	</ul>
+	<h1>&nbsp;</h1>
+	<p class="content">&nbsp;</p>
+	<div id="slideshow-caption2">
+		<div class="container" id="propsumm">
+		<p>&nbsp;</p>
+		<div align ="center">
+			<img src="images/redwireslogo.png" width="920" height="220" alt="redwireslogo" />
+		</div>
+		<p>Too Many Red Wires is an experimental game that is similar to Keep Talkingoth players for a unique cooperative effort.</p>
+		<p>&nbsp;</p>
+		<div align ="center">
+			<iframe width="853" height="480" src="https://www.youtube.com/embed/Hws7q7NxCgw" frameborder="0" allowfullscreen></iframe>
+		</div>
+		<p>Developing Too Many Red Wires was a great opportunity to experiment with wha touch screen.</p>
+		</div>
+	<!--It is safe to delete this if captions are disabled-->
+	<div id="slideshow-caption"></div>
+	</div>
+<div class="footer">Gavin Mack &copy; 2016 
+	<a href="https://github.com/gmmack"><img src="images/githubicon.png" alt="github" name="github" width="25" height="25" hspace="5" border="0" align="absbottom" id="twitter" /> </a>
+	<a href="http://www.linkedin.com/in/gavinmack"> <img src="images/linkedinicon.png" alt="linkedIn" name="linkedin" width="25" height="25" hspace="5" border="0" align="absbottom" id="linkedin" /></a><br />
+<!-- end .footer --></div>
+<!-- end .container --></div>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
+</body>
+</html>
