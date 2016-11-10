@@ -107,9 +107,9 @@ p {
 /* ~~ The footer ~~ */
 .footer {
 	color: #FFF;
-	background-color: #4cdbf3;
+	background-color: #9ddfe1;
 	font-family: 'myFont';
-	width: 960px;
+	width: 100%;
 	padding-top: 10px;
 	padding-right: 0;
 	padding-bottom: 10px;
