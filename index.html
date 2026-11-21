@@ -1,207 +1,120 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<link rel="shortcut icon" href="favicon.ico" />
-<script type="text/javascript">
-function MM_swapImgRestore() { //v3.0
-  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
-}
-function MM_preloadImages() { //v3.0
-  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
-    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
-    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
-}
-function MM_findObj(n, d) { //v4.01
-  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-  if(!x && d.getElementById) x=d.getElementById(n); return x;
-}
-function MM_swapImage() { //v3.0
-  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
-   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
-}
-</script>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<!--<link rel="shortcut icon" href="image/icon.ico"/> //for title image-->
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="google-site-verification" content="6zlWtOrPaVWkBkpgep95EsciHJjDg2DuGk4lUmVKG_4" />
-<title>Gavin Mack</title>
-<style type="text/css">
-
-@font-face{
-	font-family:"nokia Cellphone FC", Arial;
-	src: url("fonts/nokiafc22.ttf");
-}
-body {
-	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
-	background: #42413C;
-	margin: 0;
-	padding: 0;
-	color: #000;
-	background-color: #ade4fa;
-	background-image: url(images/navBarTest.jpg);
-	background-repeat: repeat-x;
-}
-/* ~~ Element/tag selectors ~~ */
-ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
-	padding: 0;
-	margin: 0;
-}
-a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
-	border: none;
-	text-align: left;
-}
-/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
-a:link {
-	color: #42413C;
-	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
-}
-a:visited {
-	color: #6E6C64;
-	text-decoration: underline;
-}
-a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
-	text-decoration: none;
-}
-/* ~~ this fixed width container surrounds the other divs ~~ */
-.container {
-	width: 960px;
-	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
-	background: #FFF;
-}
-/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
-.header {
-	background: #ADB96E;
-}
-/* ~~ This is the layout information. ~~ 
-1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
-*/
-.content {
-	padding: 10px 0;
-	background-color: #ade4fa;
-	right: 300px;
-	text-align: center;
-}
-/* ~~ The footer ~~ */
-.footer {
-	color: #FFF;
-	background-color: #9ddfe1;
-	font-family: 'myFont';
-	width: 961px;
-	padding-top: 10px;
-	padding-right: 0;
-	padding-bottom: 10px;
-	padding-left: 0;
-	position: relative;
-	bottom: auto;
-	margin: 0px;
-	height: auto;
-	text-indent: 0px;
-	font-size: 12px;
-	text-align: center;
-	left: 0;
-}
-/* ~~ miscellaneous float/clear classes ~~ */
-.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
-	float: right;
-	margin-left: 8px;
-	color: #67ABFF;
-}
-.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
-	float: left;
-	margin-right: 8px;
-	background-color: #003;
-}
-.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
-	clear:both;
-	height:0;
-	font-size: 1px;
-	line-height: 0px;
-}
-
-</style>
-<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
-<script src="scripts/jquery-1.6.min.js" type="text/javascript"></script>
-<script src="scripts/jquery.cycle.all.js" type="text/javascript"></script>
-<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
-<style type="text/css">
-/* BeginOAWidget_Instance_2559022: #slideshow */
-			#slideshow {
-	padding: 5px;
-	margin-top: 0;
-	margin-right: 0px;
-	margin-bottom: 0;
-	margin-left: 180px;
-			} 
-			#slideshow-caption{
-				padding:0;
-				margin:0;
-			}
- 
-			#slideshow img, #slideshow div {
-	padding: 5px;
-	background-color: #000;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	margin: 0;
-			}
-		
-/* EndOAWidget_Instance_2559022 */
-</style>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MHN0EEBZJB"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-MHN0EEBZJB');
-</script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gavin Mack — Game Designer &amp; Software Engineer</title>
+  <meta name="description" content="Gavin Mack is a game designer, software engineer and teacher. A portfolio of games and projects." />
+  <meta property="og:title" content="Gavin Mack — Game Designer &amp; Software Engineer" />
+  <meta property="og:description" content="Gavin Mack is a game designer, software engineer and teacher. A portfolio of games and projects." />
+  <meta property="og:image" content="https://gavinmack.com/images/headshot.jpg" />
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/site.css" />
+  <meta name="google-site-verification" content="6zlWtOrPaVWkBkpgep95EsciHJjDg2DuGk4lUmVKG_4" />
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MHN0EEBZJB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-MHN0EEBZJB');
+  </script>
 </head>
-
-
 <body>
-<script type="text/javascript">
-var sc_project=7104561; 
-var sc_invisible=1; 
-var sc_security="52f7f1cf"; 
-</script>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span>Gavin Mack</a>
+      <nav class="nav" aria-label="Main">
+        <div class="dropdown">
+          <a href="index.html#games" aria-current="page">Games</a>
+          <div class="dropdown-menu"><a href="squabblesquad.html">Birds at Arms</a><a href="antigen.html">Antigen</a><a href="pemdamonium.html">Pemdamonium</a></div>
+        </div>
+        <a href="about.html">About</a>
+        <a href="resume.html">Resume</a>
+        <a href="misc.html">Misc Projects</a>
+      </nav>
+    </div>
+  </header>
 
+  <main id="main">
+    <div class="wrap">
+      <section class="hero panel bubble">
+        <img class="avatar" src="images/headshot.jpg" alt="Gavin Mack" width="506" height="900" />
+        <div>
+          <p class="eyebrow">Hello, I'm</p>
+          <h1>Gavin Mack</h1>
+          <p class="role">Game Designer &amp; Software Engineer</p>
+          <p class="lead">Teacher and software engineer with a B.S. in Computer Science: Computer Game Design from UC Santa Cruz. I'm especially passionate about educational games.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#games">See my games</a>
+            <a class="btn" href="docs/GMack_Resume_F2016.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 21h14"/></svg> Resume</a>
+            <a class="btn" href="mailto:gavinmmack@gmail.com"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg> Get in touch</a>
+          </div>
+        </div>
+      </section>
 
-<div class="container">
-  <div class="header"><!-- end .header --><a href="index.html"><img src="images/banner_front.jpg" alt="Gavin Mack, Game Designer, Software Engineer" width="961" height="230" /></a></div>
-  <div class="content">
-  <ul id="MenuBar1" class="MenuBarHorizontal">
-    <li><a href="index.html" title="Projects" class="MenuBarItemSubmenu">Games</a>
-      <ul>
-        <li><a href="squabblesquad.html" title="squabblesquad">Birds At Arms</a></li>
-		<li><a href="antigen.html" title="antigen">Antigen</a></li>
-		<li><a href="pemdamonium.html" title="pemdamonium">Pemdamonium</a></li>
-      </ul>
-    </li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="resume.html">Resume</a></li>
-    <li><a href="misc.html">Misc Projects</a></li>
-  </ul>
-  <h1>&nbsp;</h1>
+      <section id="games">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Selected work</p>
+            <h2>Games</h2>
+          </div>
+        </div>
+        <div class="cards">
+        <a class="card" href="squabblesquad.html">
+          <div class="card-media">
+            <img src="images/BAA_banner.jpg" alt="" width="961" height="270" loading="lazy" />
+            <img class="alt" src="images/BAA_bannermouseover.jpg" alt="" width="961" height="270" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h3>Birds at Arms</h3>
+            <p>An 8-player online battle arena built on a from-scratch C++ engine. UCSC senior thesis team project.</p>
+            <ul class="tags"><li>C++</li><li>SDL 2</li><li>Box2D</li><li>Steamworks</li></ul>
+            <span class="card-cta">View project &rarr;</span>
+          </div>
+        </a>
+        <a class="card" href="antigen.html">
+          <div class="card-media">
+            <img src="images/antigen_banner.jpg" alt="" width="961" height="270" loading="lazy" />
+            <img class="alt" src="images/antigen_bannermouseover.jpg" alt="" width="961" height="270" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h3>Antigen</h3>
+            <p>A browser puzzle game. Clear pattern-matching boards to stop an infection spreading across the map.</p>
+            <ul class="tags"><li>JavaScript</li><li>Crafty.js</li><li>Playable</li></ul>
+            <span class="card-cta">View project &rarr;</span>
+          </div>
+        </a>
+        <a class="card" href="pemdamonium.html">
+          <div class="card-media">
+            <img src="images/pemdamonium_banner.png" alt="" width="961" height="270" loading="lazy" />
+            <img class="alt" src="images/pemdamonium_bannermouseover.png" alt="" width="961" height="270" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h3>Pemdamonium</h3>
+            <p>An order-of-operations platformer. Collect digits and operators, then build an equation that hits the target.</p>
+            <ul class="tags"><li>Unity 5</li><li>C#</li><li>Educational</li></ul>
+            <span class="card-cta">View project &rarr;</span>
+          </div>
+        </a>
+        </div>
+      </section>
+    </div>
+  </main>
 
-  
-  
-  
-<div id="slideshow-caption"></div>
-<p><a href="squabblesquad.html"><img src="images/BAA_banner.jpg" onmouseover="this.src='images/BAA_bannermouseover.jpg'" onmouseout="this.src='images/BAA_banner.jpg'" width="961" height="270"></a></p>
-<p><a href="antigen.html"><img src="images/antigen_banner.jpg" onmouseover="this.src='images/antigen_bannermouseover.jpg'" onmouseout="this.src='images/antigen_banner.jpg'" width="961" height="270"></a></p>
-<p><a href="pemdamonium.html"><img src="images/pemdamonium_banner.png" onmouseover="this.src='images/pemdamonium_bannermouseover.png'" onmouseout="this.src='images/pemdamonium_banner.png'" width="961" height="270"></a></p>
-  </div>
-  <div class="footer"><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/"> <span style="text-align: left"></span><span style="text-align: right"></span></a> Gavin Mack &copy;2016
-	<a href="https://github.com/gmmack"><img src="images/githubicon.png" alt="github" name="github" width="25" height="25" hspace="5" border="0" align="absbottom" id="twitter" /> </a>
-  <a href="https://www.linkedin.com/in/gavinmack"> <img src="images/linkedinicon.png" alt="linkedIn" name="linkedin" width="25" height="25" hspace="5" border="0" align="absbottom" id="linkedin" /></a><br />
-  <!-- end .footer --></div>
-  <!-- end .container --></div>
-<script type="text/javascript">
-var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
-</script>
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>&copy; 2026 Gavin Mack</span>
+      <div class="social">
+        <a href="mailto:gavinmmack@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a>
+        <a href="https://github.com/gmmack" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.82-.26.82-.57v-2.04c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.62-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.21.69.82.57A12 12 0 0 0 12 .3"/></svg></a>
+        <a href="https://www.linkedin.com/in/gavinmack" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

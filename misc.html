@@ -1,263 +1,82 @@
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<link rel="shortcut icon" href="favicon.ico" />
-<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
-<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Gavin Mack - Resume</title>
-<style type="text/css">
-<!--
-@font-face{
-	font-family: 'myFont';
-	src: url('fonts/nokiafc22.ttf');
-}
-body {
-	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
-	background: #0BB7FF;
-	margin: 0;
-	padding: 0;
-	color: #000;
-	background-color: #ade4fa;
-	background-image: url(images/navBarTest.jpg);
-	background-repeat: repeat-x;
-}
-
-/* ~~ Element/tag selectors ~~ */
-ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
-	padding: 0;
-	margin: 0;
-	text-indent: 0;
-}
-bulletpoints {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 18px;
-	text-indent: 70pt;
-}
-dot {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 18px;
-	color: #FFF;
-	background-color: #000;
-	text-indent: 70pt;
-}
-a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
-	border: none;
-}
-/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
-a:link {
-	color: #42413C;
-	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
-}
-a:visited {
-	color: #6E6C64;
-	text-decoration: underline;
-}
-a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
-	text-decoration: none;
-}
-
-/* ~~ this fixed width container surrounds the other divs ~~ */
-.container {
-	width: 960px;
-	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
-	background: #FFF;
-}
-
-/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
-.header {
-	background: #ade4fa;
-}
-
-/* ~~ This is the layout information. ~~ 
-
-1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
-
-*/
-
-.content {
-	background-color: #ade4fa;
-	right: 300px;
-	font-family: 'myFont';
-	font-size: 20px;
-	text-indent: 0px;
-	padding-top: 10px;
-	padding-right: 0;
-	padding-bottom: 10px;
-	padding-left: 280;
-	text-align: center;
-}
-
-/* ~~ The footer ~~ */
-.footer {
-	color: #FFF;
-	background-color: #9ddfe1;
-	font-family: 'myFont';
-	width: 961px;
-	padding-top: 10px;
-	padding-right: 0;
-	padding-bottom: 10px;
-	padding-left: 0;
-	position: relative;
-	bottom: auto;
-	margin: 0px;
-	height: auto;
-	text-indent: 40px;
-	font-size: 12px;
-	text-align: center;
-	left: 60;
-}
-
-/* ~~ miscellaneous float/clear classes ~~ */
-.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
-	float: right;
-	margin-left: 8px;
-	color: #67ABFF;
-}
-.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
-	float: left;
-	margin-right: 8px;
-	background-color: #003;
-}
-.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
-	clear:both;
-	height:0;
-	font-size: 1px;
-	line-height: 0px;
-}
-#retirement {
-	background-color: #000;
-	height: 820px;
-	width: 951px;
-	border: 5px solid #FFF;
-	text-align: left;
-	left: 500px;
-	top: 650px;
-	color: #FFF;
-	font-family: Fixedsys;
-	font-size: 16px;
-	text-indent: 40px;
-}
-#resume {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 16px;
-	line-height: 20px;
-	color: #000;
-	background-color: #000;
-	text-indent: 45pt;
-	border: 0;
-	text-align: left;
-	width: 961px;
-	background-image: url(images/backgroundtop.jpg), url(images/backgroundbottom.jpg), url(images/backgroundmiddle.jpg);
-	background-repeat: no-repeat, no-repeat, repeat-y;
-	background-position: left top, center bottom, left top;
-	background-size: auto;
-	padding-top: 5px;
-	padding-bottom: 20px;
-}
--->
-</style>
-<style type="text/css">
-#apDiv1 {
-	position:absolute;
-	left:20px;
-	top:591px;
-	width:961px;
-	height:100px;
-	z-index:1;
-	background-color: #000;
-	color: #FFF;
-	font-family: Fixedsys;
-}
-.gdinfo {
-	font-family: Fixedsys;
-	font-size: 18px;
-	color: #FFF;
-	background-color: #000;
-	height: 600px;
-	width: 500px;
-}
-#propsumm {
-	font-family: Fixedsys;
-	color: #FFF;
-	background-color: #000;
-	height: 600px;
-	width: 461px;
-}
-#propagandarules {
-	font-family: Fixedsys;
-	font-size: 18px;
-	color: #FFF;
-	background-color: #000;
-	height: 50px;
-	width: 400px;
-	left: 0px;
-	right: 300px;
-	border: 10px solid #FFF;
-	text-indent: 0px;
-	top: 0px;
-}
-#apDiv2 {
-	position:absolute;
-	left:487px;
-	top:604px;
-	width:492px;
-	height:600px;
-	z-index:1;
-	font-family: Fixedsys;
-	color: #FEFFFA;
-	background-color: #000;
-	font-size: 18px;
-	text-indent: 0;
-	text-align: left;
-}
-.container .content #resume ul li {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 16px;
-	color: #000;
-	text-indent: 70pt;
-	list-style-position: inside;
-}
-</style>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MHN0EEBZJB"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-MHN0EEBZJB');
-</script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Misc Projects — Gavin Mack</title>
+  <meta name="description" content="Other projects by Gavin Mack, including RapidBubble." />
+  <meta property="og:title" content="Misc Projects — Gavin Mack" />
+  <meta property="og:description" content="Other projects by Gavin Mack, including RapidBubble." />
+  <meta property="og:image" content="https://gavinmack.com/images/headshot.jpg" />
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/site.css" />
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MHN0EEBZJB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-MHN0EEBZJB');
+  </script>
 </head>
-
-
 <body>
-<div class="container">
-  <div class="header"><!-- end .header --><a href="index.html"><img src="images/banner_front.jpg" alt="Gavin Mack, Game Designer, Software Engineer" width="961" height="230" /></a></div>
-  <div class="content">
-<ul id="MenuBar1" class="MenuBarHorizontal">
-  <li><a href="index.html" title="Projects" class="MenuBarItemSubmenu">Games</a>
-    <ul>
-      <li><a href="squabblesquad.html" title="squabblesquad">Birds At Arms</a></li>
-		<li><a href="antigen.html" title="antigen">Antigen</a></li>
-		<li><a href="pemdamonium.html" title="pemdamonium">Pemdamonium</a></li>
-      </ul>
-    </li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="resume.html">Resume</a></li>
-    <li><a href="misc.html">Misc Projects</a></li>
-</ul>
-<h1>&nbsp;</h1>
-  <p class="content"><!--It is safe to delete this if captions are disabled-->
-  Most recently I have been teaching high school computer science full time, while working on an educational technology tool called <a href="https://rapidbubble.com">RapidBubble</a>, 
-	  which teachers can use for generating shuffled test versions and auto-grading bubble answer sheets.</p>
-  <div class="footer">Gavin Mack &copy; 2016
-	<a href="https://github.com/gmmack"><img src="images/githubicon.png" alt="github" name="github" width="25" height="25" hspace="5" border="0" align="absbottom" id="twitter" /> </a>
-	<a href="https://www.linkedin.com/in/gavinmack"> <img src="images/linkedinicon.png" alt="linkedIn" name="linkedin" width="25" height="25" hspace="5" border="0" align="absbottom" id="linkedin" /></a><br />
-  </div>
-<script type="text/javascript">
-var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
-</script>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span>Gavin Mack</a>
+      <nav class="nav" aria-label="Main">
+        <div class="dropdown">
+          <a href="index.html#games">Games</a>
+          <div class="dropdown-menu"><a href="squabblesquad.html">Birds at Arms</a><a href="antigen.html">Antigen</a><a href="pemdamonium.html">Pemdamonium</a></div>
+        </div>
+        <a href="about.html">About</a>
+        <a href="resume.html">Resume</a>
+        <a href="misc.html" aria-current="page">Misc Projects</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap">
+      <section class="panel">
+        <p class="eyebrow">Beyond games</p>
+        <h1>Misc Projects</h1>
+        <p class="lead">Most recently I have been teaching high school computer science full time, while working on an educational technology tool.</p>
+      </section>
+
+      <div class="cards" style="margin-top:34px">
+        <a class="card" href="https://rapidbubble.com" target="_blank" rel="noopener">
+          <div class="card-body">
+            <p class="eyebrow">EdTech</p>
+            <h3>RapidBubble</h3>
+            <p>A tool teachers can use to generate shuffled test versions and auto-grade bubble answer sheets.</p>
+            <span class="card-cta">Visit rapidbubble.com &rarr;</span>
+          </div>
+        </a>
+        <a class="card" href="https://www.funfreshfinance.com" target="_blank" rel="noopener">
+          <div class="card-body">
+            <p class="eyebrow">Writing</p>
+            <h3>Fun Fresh Finance</h3>
+            <p>My personal finance blog, covering budgeting, investing and retirement.</p>
+            <span class="card-cta">Visit funfreshfinance.com &rarr;</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>&copy; 2026 Gavin Mack</span>
+      <div class="social">
+        <a href="mailto:gavinmmack@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a>
+        <a href="https://github.com/gmmack" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.82-.26.82-.57v-2.04c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.62-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.21.69.82.57A12 12 0 0 0 12 .3"/></svg></a>
+        <a href="https://www.linkedin.com/in/gavinmack" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
